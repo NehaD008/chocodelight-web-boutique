@@ -12,9 +12,8 @@ const Hero = ({ onShopNowClick }: HeroProps) => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-foreground bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
-      
       <div className="container-desktop relative z-10">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
@@ -22,12 +21,10 @@ const Hero = ({ onShopNowClick }: HeroProps) => {
             <br />
             <span className="text-accent">Taste the Magic of Moon</span>
           </h1>
-          
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">
             Experience the finest artisan chocolates, carefully crafted with premium ingredients 
             and love. Each piece tells a story of tradition, quality, and pure indulgence.
           </p>
-          
           <Button 
             onClick={onShopNowClick}
             size="lg"
