@@ -2,39 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ChocoDelight Design System - Warm chocolate theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Background colors */
+    --background: 33 50% 97%; /* #FFF8F1 cream beige */
+    --foreground: 22 46% 25%; /* #4E342E dark cocoa brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card colors */
+    --card: 0 0% 100%; /* Pure white for product cards */
+    --card-foreground: 22 46% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Primary colors - golden caramel accent */
+    --primary: 39 48% 64%; /* #D7A86E golden caramel */
+    --primary-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Secondary colors - warm neutrals */
+    --secondary: 33 30% 90%;
+    --secondary-foreground: 22 46% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted colors */
+    --muted: 33 20% 85%;
+    --muted-foreground: 22 30% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent colors */
+    --accent: 39 48% 64%;
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Interactive states */
+    --hover: 39 55% 58%; /* Darker golden for hover */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 33 20% 85%;
+    --input: 33 20% 90%;
+    --ring: 39 48% 64%;
 
     --radius: 0.5rem;
 
@@ -101,5 +107,32 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* Custom utility classes for ChocoDelight */
+  .container-desktop {
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .shadow-elegant {
+    box-shadow: 0 4px 20px rgba(78, 52, 46, 0.08);
+  }
+
+  .shadow-hover {
+    box-shadow: 0 8px 30px rgba(78, 52, 46, 0.12);
+  }
+
+  .gradient-golden {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--hover)));
+  }
+
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
