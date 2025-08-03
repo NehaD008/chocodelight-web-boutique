@@ -21,7 +21,7 @@ const Header = ({ cartItemCount, onCartClick }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-foreground">
-              ChocoDelight
+              Celestine
             </h1>
           </div>
 

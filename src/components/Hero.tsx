@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-chocolates.jpg";
+import heroImage from "@/assets/celestine-hero-bg.jpg";
 
 interface HeroProps {
   onShopNowClick: () => void;
@@ -18,9 +18,9 @@ const Hero = ({ onShopNowClick }: HeroProps) => {
       <div className="container-desktop relative z-10">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
-            Handcrafted Chocolates.
+            Celestine
             <br />
-            <span className="text-accent">From Our Kitchen to Yours.</span>
+            <span className="text-accent">Taste the Magic of Moon</span>
           </h1>
           
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">

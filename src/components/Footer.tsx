@@ -7,15 +7,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">ChocoDelight</h3>
+            <h3 className="text-2xl font-bold mb-4">Celestine</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Handcrafted chocolates made with love and the finest ingredients. 
-              From our kitchen to yours, we deliver exceptional taste experiences.
+              Taste the magic of moon with our exceptional chocolate experiences.
             </p>
             <div className="flex items-center text-gray-300">
               <span>Made with</span>
               <Heart className="h-4 w-4 mx-1 text-red-400 fill-current" />
-              <span>by ChocoDelight</span>
+              <span>by Celestine</span>
             </div>
           </div>
           
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-gray-300">hello@chocodelight.com</span>
+                <span className="text-gray-300">hello@celestine.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary" />
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 ChocoDelight. All rights reserved. | Made with passion for chocolate lovers everywhere.</p>
+          <p>&copy; 2024 Celestine. All rights reserved. | Made with passion for chocolate lovers everywhere.</p>
         </div>
       </div>
     </footer>
