@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/celestine-hero-bg.jpg";
+import heroImage from "/lovable-uploads/6d750b84-61a1-43c7-8f58-0cc3b4e3e11f.png";
 
 interface HeroProps {
   onShopNowClick: () => void;
