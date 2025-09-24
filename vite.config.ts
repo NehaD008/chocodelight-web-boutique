@@ -11,13 +11,12 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === 'development' ? '/' : '/chocodelight-web-boutique/',
+  base: './', // FIX: Changed to relative path for GitHub Pages
 }));
