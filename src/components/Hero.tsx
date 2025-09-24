@@ -17,9 +17,9 @@ const Hero = ({ onShopNowClick }: HeroProps) => {
       <div className="container-desktop relative z-10">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
-            Celestine
+            Célestine
             <br />
-            <span className="text-accent">Taste the Magic of Moon</span>
+            <span className="text-accent">Taste the Magic of the Moon</span>
           </h1>
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">
             Experience the finest artisan chocolates, carefully crafted with premium ingredients 

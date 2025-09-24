@@ -20,7 +20,7 @@ const About = () => {
                 only the finest cacao beans, pure vanilla, and fresh cream to create our handcrafted 
                 confections.
               </p>
-              
+              npm
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Every chocolate is made in small batches with love and attention to detail, 
                 ensuring that each piece delivers an exceptional taste experience.
