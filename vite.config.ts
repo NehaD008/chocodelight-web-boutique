@@ -18,5 +18,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: './', // FIX: Changed to relative path for GitHub Pages
+  base: process.env.NODE_ENV === 'production' ? '/chocodelight-web-boutique/' : './',
 }));
